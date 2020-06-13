@@ -1,0 +1,4 @@
+dans la classe article
+nom de la table pour les articles : article;
+
+dans index.php et dans la class article : $db => création d'une connexion à la database

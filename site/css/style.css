@@ -36,7 +36,7 @@ h3, nav
     font-size: 1.5rem;
 }
 
-article
+article, fieldset
 {
     width:80%;
     margin:auto;
@@ -58,4 +58,10 @@ button
 a
 {
     text-decoration:none;
+}
+
+.lienPage
+{
+    margin:auto;
+    display: block;
 }

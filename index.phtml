@@ -13,7 +13,7 @@
         <nav>
             <button><a href='index.php'>Accueil</a></button>
                 <?php 
-                    
+                    session_start();
                     if (isset($_SESSION['ID'])):
                         ?>
                     
@@ -30,6 +30,7 @@
                 if(isset($_GET['form']))
                     {
                         include($form.$_GET['form'].$phtml);
+                        echo $_GET['page'];
                     }
                 else
                     {
