@@ -1,0 +1,61 @@
+.container
+{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5c8b6+0,7b784f+34,932a1d+100 */
+    background: #e5c8b6; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #e5c8b6 0%, #7b784f 34%, #932a1d 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #e5c8b6 0%,#7b784f 34%,#932a1d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #e5c8b6 0%,#7b784f 34%,#932a1d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5c8b6', endColorstr='#932a1d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+h1,h2,h3,nav,main
+{
+    
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1
+{
+    font-size: 5em;
+}
+
+h2
+{
+    font-size:3em;
+}
+
+h3, nav
+{
+    font-size: 2em;
+}
+
+.main
+{
+    font-size: 1.5rem;
+}
+
+article
+{
+    width:80%;
+    margin:auto;
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius:15px;
+}
+
+.center
+{
+    text-align: center;
+}
+
+button
+{
+    border-radius: 1em;
+}
+
+a
+{
+    text-decoration:none;
+}
