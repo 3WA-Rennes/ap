@@ -2,24 +2,38 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="site/css/normalize.css">
     <link rel="stylesheet" href="site/css/style.css">
     <title>Afrique Partenaires</title>
 </head>
 <body>
     <div class="container">
-        <h1>Afrique Partenaires</h1>
+        <div class="title">
+            <span class='space'></span>
+            <img src="site/css/image/logo.svg" alt="logo de afrique partenaire représentant un arbre avec le nom de l'association dans le tronc" class='logo'>
+            <h1>Afrique Partenaires</h1>
+            <span class='space'></span>
+        </div>
         <nav>
-            <button><a href='index.php'>Accueil</a></button>
+            
+            <a href='index.php'>Accueil</a>
                 <?php 
-                    session_start();
+                    //session_start();
                     if (isset($_SESSION['ID'])):
                         ?>
                     
-                    <button>Déconnexion</button>
-                    <button><a href='index.php?form=profil'>Profil</a></button>
-                <?php
+                    <a href='index.php?form=kill'>Déconnexion</a>
+                    <a href='index.php?form=profil'>Mon Profil</a>
+                    
+                    <?php
+                            if($_SESSION['statut']==='admin'):
+                    ?>
+                        <a href='index.php?form=admin/validation'>Administation</a>
+                        <a href='index.php?form=profil'>Profil</a>
+                    <?php endif;
+                
                     else:
                 ?>
                     <button>Connexion</button>
@@ -40,6 +54,7 @@
 
         </div>
     </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="site/js/script.js"></script>
 </body>
 </html>

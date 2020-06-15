@@ -9,9 +9,26 @@
 
 }
 
-h1,h2,h3,nav,main
+.title
 {
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:auto;
+   
+}
+
+.space
+{
+    flex:1;
+}
+.logo
+{
+    height:5rem;
+    width: auto;
+}
+h1,h2,h3,nav,main
+{  
     text-align:center;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -36,7 +53,7 @@ h3, nav
     font-size: 1.5rem;
 }
 
-article, fieldset
+article, fieldset,table
 {
     width:80%;
     margin:auto;
@@ -50,7 +67,7 @@ article, fieldset
     text-align: center;
 }
 
-button
+button,a
 {
     border-radius: 1em;
 }
@@ -58,10 +75,27 @@ button
 a
 {
     text-decoration:none;
+    background-color: silver;
+    padding: .1rem;
+    color:black;
 }
 
 .lienPage
 {
     margin:auto;
     display: block;
+}
+
+tr
+{
+  
+    margin: 1rem 0;
+    
+}
+
+td
+{
+    text-align: center;
+    border: 1px black solid;
+    
 }
