@@ -1,12 +1,9 @@
 .container
 {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5c8b6+0,7b784f+34,932a1d+100 */
-    background: #e5c8b6; /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover,  #e5c8b6 0%, #7b784f 34%, #932a1d 100%); /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover,  #e5c8b6 0%,#7b784f 34%,#932a1d 100%); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center,  #e5c8b6 0%,#7b784f 34%,#932a1d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5c8b6', endColorstr='#932a1d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+    background-image: url('image/logo.svg');
+    background-size: 100% 100%;
+   /* background-repeat: inherit;*/
+   
 }
 
 .title
@@ -22,7 +19,8 @@
 {
     flex:1;
 }
-.logo
+
+.logo,.nobutton
 {
     height:5rem;
     width: auto;
@@ -31,29 +29,31 @@ h1,h2,h3,nav,main
 {  
     text-align:center;
     font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
 }
 
 h1
 {
-    font-size: 5em;
+    font-size: 5rem;
 }
 
 h2
 {
-    font-size:3em;
+    font-size:3rem;
 }
 
 h3, nav
 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .main
 {
     font-size: 1.5rem;
+    color:black;
 }
 
-article, fieldset,table
+article, fieldset,table,form
 {
     width:80%;
     margin:auto;
@@ -67,15 +67,15 @@ article, fieldset,table
     text-align: center;
 }
 
-button,a
+button,a,.logo
 {
-    border-radius: 1em;
+    border-radius: 1rem;
 }
 
 a
 {
     text-decoration:none;
-    background-color: silver;
+    background-color: green;
     padding: .1rem;
     color:black;
 }
@@ -86,16 +86,33 @@ a
     display: block;
 }
 
-tr
+
+tr 
 {
-  
+    width: 80%;
     margin: 1rem 0;
     
 }
 
-td
+td, th
 {
     text-align: center;
     border: 1px black solid;
-    
+    width :10vw;
+}
+
+.validation
+{
+    font-size: 1.2rem;
+}
+
+footer
+{
+    color:white;
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    .main {
+      width:100vw;
+    }
 }
