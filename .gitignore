@@ -1,0 +1,9 @@
+
+controllers/contributionController.php
+controllers/PersonController.php
+modeles/Admin.php
+modeles/Contribution.php
+modeles/Form.php
+modeles/Risk_taken.php
+modeles/Subscriber.php
+views/user/validation.php
